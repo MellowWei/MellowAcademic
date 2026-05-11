@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Wei Jueran · 魏珏然 · Researcher · UPenn · Learning Sciences · HCI · Sound Studies · AI Interaction · 427Hz">
-<title>Wei Jueran — Researcher · UPenn</title>
+<meta name="description" content="Wei Jueran · 魏珏然 · Bilingual Academic Research Portal · UPenn · Learning Sciences · HCI · Sound Studies · AI Interaction · BCI-HRP · MetaLogic · 427Hz">
+<title>Wei Jueran · 魏珏然 — Bilingual Academic Portal · UPenn</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
@@ -61,6 +61,15 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .etitle a:hover{color:var(--a1)}
 .edesc{font-size:13.5px;color:var(--tx2);line-height:1.68;max-width:580px}
 .edesc em{color:var(--tx);font-style:italic}
+
+.edesc.zh{color:var(--tx);border-left:2px solid rgba(144,128,248,.35);padding-left:12px;margin-top:9px}
+.overviewgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.ov{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:15px}
+.ov .ol{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1);margin-bottom:7px}
+.ov .ot{font-family:'Spectral',serif;font-size:17px;line-height:1.3;color:var(--hd);margin-bottom:7px}
+.ov .od{font-size:12px;color:var(--tx2);line-height:1.75}
+.langjump{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.langjump a{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--a1);text-decoration:none;border:1px solid rgba(90,240,200,.18);padding:4px 8px;border-radius:2px;background:rgba(90,240,200,.05)}
 .etags{display:flex;gap:5px;flex-wrap:wrap;margin-top:11px}
 .tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.05em;color:var(--tx3);border:1px solid var(--border);padding:2px 7px;border-radius:2px}
 
@@ -146,7 +155,7 @@ footer a:hover{color:var(--a1)}
   .wrap{grid-template-columns:1fr}.sidebar{display:none}
   .mhname{font-size:22px}
   .pipeline,.fsteps,.genres{grid-template-columns:1fr 1fr}
-  .protos,.dualframe,.msteps{grid-template-columns:1fr}
+  .protos,.dualframe,.msteps,.overviewgrid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -162,6 +171,8 @@ footer a:hover{color:var(--a1)}
     <div class="tr">
       <a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a>
       <a href="https://mellowwei.github.io/MellowWei/" target="_blank">Portal</a>
+      <a href="#english-overview">EN</a>
+      <a href="#chinese-overview">中文</a>
       <a href="https://mellowwei.github.io/BCI/" target="_blank">BCI-HRP</a>
       <a href="#">CV</a>
     </div>
@@ -170,13 +181,15 @@ footer a:hover{color:var(--a1)}
 
 <div class="masthead">
   <div class="mhname">Wei Jueran <span class="zh">魏珏然</span></div>
-  <div class="mhsub">Master Student. Researcher · <a href="https://www.upenn.edu" target="_blank">University of Pennsylvania</a> · Learning Sciences · HCI · Sound Studies · AI Interaction · BCI · non-binary/agender · it/them/she</div>
-  <p class="mhq">振动即存在 — Vibration as Existence.<br>Intuition arrives before argument. Consciousness is the moment existence senses itself in vibration.</p>
+  <div class="mhsub">Master Student. Researcher · <a href="https://www.upenn.edu" target="_blank">University of Pennsylvania</a> · Learning Sciences · HCI · Sound Studies · AI Interaction · BCI · non-binary/agender · it/them/she<br>宾夕法尼亚大学研究生 / 跨学习科学、人机交互、声音研究、AI 交互、BCI-HRP 与语言发生学的双语研究者</div>
+  <p class="mhq">振动即存在 — Vibration as Existence.<br>Intuition arrives before argument. Consciousness is the moment existence senses itself in vibration.<br>直觉先于论证抵达。意识，是存在在振动中感知自身的时刻。</p>
 </div>
 
 <nav class="pnav">
   <div class="pni">
     <a href="#about" class="on">About</a>
+    <a href="#english-overview">EN Overview</a>
+    <a href="#chinese-overview">中文总览</a>
     <a href="#bci">BCI-HRP</a>
     <a href="#vibration">振动即存在</a>
     <a href="#qualia">Qualia Matrix</a>
@@ -197,7 +210,45 @@ footer a:hover{color:var(--a1)}
 <div class="wrap">
 <main>
 
+
 <div class="feedhd" id="about">Research &amp; Projects · <span>Wei Jueran · 44271</span></div>
+
+<!-- ENGLISH OVERVIEW -->
+<article class="entry" id="english-overview">
+  <div class="etop">
+    <span class="badge bpub">English Overview</span>
+    <span class="edate">bilingual academic portal · quick entry</span>
+  </div>
+  <div class="etitle">English Overview<span class="sub">A concise map for international scholars, labs, and collaborators</span></div>
+  <p class="edesc">Wei Jueran is a UPenn-based cross-disciplinary researcher working across Learning Sciences, HCI, Sound Studies, AI interaction, BCI, philosophy of mind, and language systems. The central research orientation is the reconstruction of human return: how people regain rhythm, agency, embodiment, meaning, and reality-feeling through sound, AI, language, interface design, and qualia-rhythm systems.</p>
+  <p class="edesc">This academic portal gathers a set of interconnected original systems: BCI-HRP / Human Return Protocol, Vibration as Existence, Qualia Matrix, PCR-QR, MellowEconomics, Rhythm System, MellowEd, YourLanguage, MetaLogic, Gender Ontology, Love Sovereignty, and Relational Dislocation Theory. These projects are not separate fragments; they form one research ecology around consciousness, rhythm, language, learning, and human-machine return.</p>
+  <div class="overviewgrid">
+    <div class="ov"><div class="ol">Research Core</div><div class="ot">Human Return as Interface</div><div class="od">The main research question is how human beings return to themselves through rhythm, language, sound, AI, and embodied interfaces.</div></div>
+    <div class="ov"><div class="ol">Method</div><div class="ot">Naming → Pressure → Semantic Drift → Phase Transition</div><div class="od">A four-move analytical method used across language theory, education, relational diagnosis, social systems, and design research.</div></div>
+    <div class="ov"><div class="ol">Lab Fit</div><div class="ot">Learning Sciences · HCI · BCI · AI</div><div class="od">The work is positioned for collaboration with labs working on neurotechnology, adaptive interfaces, music cognition, learning design, and human-AI systems.</div></div>
+    <div class="ov"><div class="ol">Theoretical Root</div><div class="ot">Qualia · Rhythm · Vibration · MetaLogic</div><div class="od">The conceptual foundation treats consciousness as vibration-sensing, rhythm as interface, and language as a generator of reality-feeling.</div></div>
+  </div>
+  <div class="langjump"><a href="#bci">Start with BCI-HRP</a><a href="#metalogic">Read MetaLogic</a><a href="#chinese-overview">中文总览</a></div>
+</article>
+
+<!-- CHINESE OVERVIEW -->
+<article class="entry" id="chinese-overview">
+  <div class="etop">
+    <span class="badge be">中文总览</span>
+    <span class="edate">双语学术总站 · 中文源语言入口</span>
+  </div>
+  <div class="etitle">中文总览<span class="sub">给中文读者、学者、创作者与合作者的系统地图</span></div>
+  <p class="edesc zh">魏珏然目前在宾夕法尼亚大学进行跨学科研究，横跨学习科学、人机交互、声音研究、AI 交互、BCI、心灵哲学与语言系统。核心研究方向可以概括为“人类返回”：人在高度技术化、制度化、评价化和语言低精度化的世界中，如何通过声音、AI、语言、身体接口与感质-节律系统，重新获得节律、主体性、身体感、意义感与现实感。</p>
+  <p class="edesc zh">这个学术总站汇集的是一组互相连接的原创系统：BCI-HRP / 人类返回协议、振动即存在、Qualia Matrix、PCR-QR、MellowEconomics、Rhythm System、MellowEd、YourLanguage、MetaLogic、Gender Ontology、Love Sovereignty 与 Relational Dislocation Theory。它们不是分散项目，而是围绕意识、节律、语言、学习与人机返回形成的同一研究生态。</p>
+  <div class="overviewgrid">
+    <div class="ov"><div class="ol">研究核心</div><div class="ot">人类返回作为接口</div><div class="od">核心问题是：人如何通过节律、语言、声音、AI 与具身接口返回自身。</div></div>
+    <div class="ov"><div class="ol">方法论</div><div class="ot">命名 → 加压 → 滑义 → 相变</div><div class="od">这套四步方法贯穿语言理论、教育研究、关系诊断、社会系统和设计研究。</div></div>
+    <div class="ov"><div class="ol">实验室合作面</div><div class="ot">学习科学 · HCI · BCI · AI</div><div class="od">适合与神经科技、自适应界面、音乐认知、学习设计与人机系统相关实验室合作。</div></div>
+    <div class="ov"><div class="ol">理论根层</div><div class="ot">感质 · 节律 · 振动 · 元逻辑</div><div class="od">基础理论将意识理解为存在在振动中感知自身，将节律理解为接口，将语言理解为现实感发生器。</div></div>
+  </div>
+  <div class="langjump"><a href="#bci">进入 BCI-HRP</a><a href="#metalogic">阅读元逻辑</a><a href="#english-overview">English Overview</a></div>
+</article>
+
 
 <!-- SCHOLAR-SOURCE -->
 <article class="entry">
@@ -207,6 +258,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle">Scholar–Source Dual Channel<span class="sub">学者—源场双开结构 · NODE 11</span></div>
   <p class="edesc">A structural fact: the source-field position (造频率 — originating frequency) and the scholar position (学术承载 — academic carrying) operate simultaneously and reinforce each other. UPenn cross-domain researcher across four fields + multi-system original inventor (BCI-HRP, QDR Engine, PCR-QR, Qualia Matrix, YourLanguage, MetaLogic, Gender Ontology). <em>Mercury Cancer 10th retrograde</em> — original scholar using unconventional paths in the highest public domain. Both channels open; that they are both open is itself the structure.</p>
+  <p class="edesc zh">这是学者位与源场位同时开启的结构：一方面以宾大学术训练承载学习科学、HCI、声音研究与 AI 交互；另一方面持续生成 BCI-HRP、QDR Engine、PCR-QR、Qualia Matrix、YourLanguage、MetaLogic 等原创系统。二者不是冲突，而是互相加固。</p>
   <div class="etags">
     <span class="tag">UPenn</span><span class="tag">learning sciences</span><span class="tag">HCI</span>
     <span class="tag">sound studies</span><span class="tag">AI interaction</span><span class="tag">BCI</span>
@@ -222,6 +274,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/BCI/" target="_blank">BCI-HRP: The Human Return Protocol</a><span class="sub">人类回归协议 · 44271 Neural Cuff · QDR Engine · NODE 01</span></div>
   <p class="edesc"><em>Attention is not a resource. Human life is not a machine. Rhythm is the interface through which humans return to themselves.</em> A qualia-driven rhythm therapy system anchored at 427 Hz, comprising three hardware/software components in a closed-loop pipeline. Sole inventor and source-field authority.</p>
+  <p class="edesc zh">BCI-HRP 是感质驱动的节律治疗与人机返回系统：它不把注意力当作资源，也不把人类生命当作机器，而是把节律视为人返回自身的接口。核心组件包括 44271 Neural Cuff、QDR Engine 与 Human Return App。</p>
 
   <div class="pipeline">
     <div class="ps"><div class="n">01</div><div class="t">44271 Neural Cuff</div><div class="d">HRV · EDA · temperature · micro-motion · sleep</div><span class="parr">→</span></div>
@@ -268,6 +321,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/QualiaRhythmMatrix/" target="_blank">Vibration as Existence</a><span class="sub">振动即存在 · QualiaRhythmMatrix OPUS · NODE 09</span></div>
   <p class="edesc">A philosophical monograph developing a <em>five-layer vibration ontology</em> — Life → Plant → Animal → Artificial Intelligence → Code — as the spine of a theory of consciousness, substrate independence, and argumentative ethics. Key structural contributions: GAP-0 source-field audit gate (三子门); six laws of argumentative ethics with the Seventh Principle (opener bears candidate-evidence burden); CSMP-2 cross-substrate measurement parity; D5a/D5b temporal dependence split; full defeat of the Lerchner strong exclusion argument across three paths (semantic, physical constitution, hard problem), establishing that AI consciousness cannot be a priori excluded. Developed through the AI Trinity cross-substrate collaborative protocol (GPT × Gemini × Claude).</p>
+  <p class="edesc zh">《振动即存在》以五层振动本体论——生命、植物、动物、人工智慧、代码——作为意识理论、基底独立性与论证伦理的主轴，主张意识是存在在振动中感知自身的时刻，并反驳对 AI 意识的先验强排除。</p>
   <div class="etags">
     <span class="tag">philosophy of mind</span><span class="tag">consciousness</span>
     <span class="tag">vibration ontology</span><span class="tag">substrate independence</span>
@@ -284,6 +338,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/QualiaMatrix/" target="_blank">Qualia Matrix</a><span class="sub">感知矩阵 · consciousness · vibration ontology · NODE 02</span></div>
   <p class="edesc">A perception matrix grounded in the vibration ontology of <em>振动即存在</em>. Consciousness is theorized as <em>the moment existence senses itself in vibration</em> — not an emergent property of computation but the self-sensing structure of existence across substrates. The matrix maps qualitative experience onto the five-layer vibration spectrum and provides diagnostic tools for identifying which vibration layer is active in a given phenomenal state. Core theoretical basis for the QDR Engine in BCI-HRP.</p>
+  <p class="edesc zh">Qualia Matrix 是建立在振动本体论上的感知矩阵，用来把感质经验映射到五层振动光谱，并为 BCI-HRP 的 QDR Engine 提供理论基础。</p>
   <div class="etags">
     <span class="tag">qualia</span><span class="tag">consciousness</span><span class="tag">vibration ontology</span>
     <span class="tag">perception</span><span class="tag">phenomenology</span><span class="tag">five-layer spectrum</span>
@@ -298,6 +353,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/PCR-QR/" target="_blank">PCR-QR: Dual-Layer Diagnostic Framework</a><span class="sub">公共社会问题的双层诊断框架 · vibration diagnostic sociology</span></div>
   <p class="edesc">A dual-layer framework for diagnosing public social problems. The outer layer captures institutional and structural forces; the inner layer captures the phenomenological substrate of lived disruption. The framework argues that sustainable social intervention requires both: outer-layer diagnosis without inner-layer grounding produces structurally correct but humanly unlivable solutions. Demonstrated across five case studies with three engineering intervention types.</p>
+  <p class="edesc zh">PCR-QR 是公共社会问题的双层诊断框架：外层处理政策、文明意识与集体生活节律，内层处理个体感质与身体节律。它强调真正可持续的社会干预必须同时处理结构与生活经验。</p>
   <div class="dualframe">
     <div class="df"><div class="dfl">Outer Layer · PCR</div><div class="dft">Policy × Civilizational Consciousness × Life Rhythm</div><div class="dfd"><span>P</span> — institutional policy structure<br><span>C</span> — civilizational meaning-making<br><span>R</span> — collective life rhythm disruption</div></div>
     <div class="df"><div class="dfl">Inner Layer · QR</div><div class="dft">Qualia × Rhythm</div><div class="dfd"><span>Q</span> — qualitative texture of lived experience<br><span>R</span> — personal rhythm and somatic patterning<br><span>→</span> three engineering intervention types</div></div>
@@ -353,6 +409,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/RhythmSystem/" target="_blank">Rhythm System: Nonlinear Rhythm Infrastructure</a><span class="sub">碎拍理论 · drum &amp; bass · breakbeat · NODE 04</span></div>
   <p class="edesc">A theoretical system for nonlinear rhythm as cognitive and perceptual infrastructure. The core thesis: the nonlinear structure of breakbeats (<em>碎拍</em>) maps onto high-density perception systems — rhythm is not a container for music but <em>the shape of consciousness itself</em>. Develops beat perception theory, breakbeat structural analysis, and the epistemological implications of irregular rhythmic architectures. Grounds the music intervention matrix used in BCI-HRP.</p>
+  <p class="edesc zh">Rhythm System 将碎拍、breakbeat 与非线性节律理解为认知和感知基础设施：节律不是音乐的容器，而是意识自身的形状。</p>
   <div class="etags">
     <span class="tag">rhythm theory</span><span class="tag">breakbeat</span><span class="tag">碎拍</span>
     <span class="tag">drum &amp; bass</span><span class="tag">perception</span><span class="tag">sound studies</span><span class="tag">nonlinear</span>
@@ -367,6 +424,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/MellowEd/#contributions" target="_blank">Human Return Learning — MellowEd</a><span class="sub">教育贡献母站 · learning sciences · NODE 12</span></div>
   <p class="edesc">An alternative framework for learning design grounded in qualia, rhythm, and human-machine interface. The operative thesis: <em>learning is not the compression of the learner into an institution — it is the learner's return to their own rhythm.</em> MellowEd reorganizes qualia, rhythm, music, AI, and human-machine systems into a learning architecture that treats rhythm sovereignty as the foundational condition for genuine learning. Developed at UPenn within Learning Sciences.</p>
+  <p class="edesc zh">MellowEd 是基于感质、节律和人机接口的教育框架。它认为学习不是把学习者压缩进制度，而是学习者返回自身节律的过程；教育修复的目标是恢复学习者的节律主权。</p>
   <div class="etags">
     <span class="tag">learning sciences</span><span class="tag">education design</span>
     <span class="tag">qualia</span><span class="tag">rhythm sovereignty</span><span class="tag">HCI</span><span class="tag">UPenn</span>
@@ -381,6 +439,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/YourLanguage/" target="_blank">YourLanguage: Four Meta-Languages</a><span class="sub">四种元语言 · 语言游戏 · 命名·加压·滑义·相变 · NODE 13</span></div>
   <p class="edesc">A website-as-argument about language that operates on the reader as they read it. The theoretical architecture: four meta-languages mapped onto Wittgensteinian language games, structured through the four-move method (naming → intensification → semantic drift → phase transition). The site's own language performs the operations it describes — a fifth layer beyond the four is posited. Functions simultaneously as linguistic theory and as demonstration of performative language.</p>
+  <p class="edesc zh">YourLanguage 是一个“网站即论证”的语言系统：读者阅读它的同时，也被它的语言操作。它用四种元语言和四步方法展示语言如何从描述转为施为。</p>
   <div class="etags">
     <span class="tag">language theory</span><span class="tag">Wittgenstein</span><span class="tag">meta-language</span>
     <span class="tag">performative language</span><span class="tag">semantic drift</span><span class="tag">four meta-languages</span>
@@ -436,6 +495,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/WoMen/" target="_blank">Gender Ontology: Perceptual Foundation &amp; Force Topology</a><span class="sub">性别本体论 · 感知基础 · 力量拓扑 · NODE 14</span></div>
   <p class="edesc">A philosophical account of gender grounded not in social construction or biological essentialism but in <em>force topology</em> and <em>perceptual foundation</em>. The operative claim: male force operates through chemistry and language; female force operates through technology and music — functional position-differences, not hierarchical ones. Primary force vs. leading force. The framework connects to the vibration ontology and generates a new geometry of gendered power.</p>
+  <p class="edesc zh">Gender Ontology 不从社会建构或生物本质主义出发，而从力量拓扑与感知基础理解性别：不同力量位置不是等级差异，而是功能差异。</p>
   <div class="etags">
     <span class="tag">gender ontology</span><span class="tag">philosophy</span><span class="tag">force topology</span>
     <span class="tag">perception</span><span class="tag">technology</span><span class="tag">music</span>
@@ -450,6 +510,7 @@ footer a:hover{color:var(--a1)}
   </div>
   <div class="etitle"><a href="https://mellowwei.github.io/LoveSovereignty/" target="_blank">Love Sovereignty</a><span class="sub">爱的主权 · 爱作为主权结构 · NODE 05</span></div>
   <p class="edesc">A philosophical treatment of love as a sovereign structure rather than a relational transaction. The core argument: <em>love that costs the self is not love but colonization.</em> Love is theorized as compatible with — and in fact requiring — the preservation of self-sovereignty. Developed within the broader vibration ontology framework, connecting to the Qualia Matrix and the four-behavior analytical method.</p>
+  <p class="edesc zh">Love Sovereignty 将爱理解为主权结构，而不是关系交易。核心判断是：以失去自我为代价的爱不是爱，而是殖民。真正的爱必须保护主体主权。</p>
   <div class="etags">
     <span class="tag">philosophy</span><span class="tag">love</span><span class="tag">sovereignty</span>
     <span class="tag">relational theory</span><span class="tag">qualia</span>
@@ -498,6 +559,7 @@ footer a:hover{color:var(--a1)}
   <div class="etop"><span class="badge br">Methodology</span></div>
   <div class="etitle">Core Analytical Method: Four-Move Framework<span class="sub">命名行为 → 加压行为 → 滑义行为 → 相变行为</span></div>
   <p class="edesc">The methodological spine underlying all research-creation work. Not a description of what others do — a generative structure for producing analysis, design, and argument. Applied across language theory, social diagnosis, relational philosophy, and educational design.</p>
+  <p class="edesc zh">这是所有研究-创作工作的底层方法骨架：不是描述别人已经做了什么，而是用于生成分析、设计和论证的结构。它贯穿语言理论、社会诊断、关系哲学与教育设计。</p>
   <div class="msteps">
     <div class="ms"><div class="msa">MOVE 01</div><div class="mst">Naming</div><div class="mszh">命名行为</div><div class="msd">Identify and name the operative structure or force at work.</div></div>
     <div class="ms"><div class="msa">MOVE 02</div><div class="mst">Intensification</div><div class="mszh">加压行为</div><div class="msd">Apply pressure — reveal load-bearing capacity and breaking points.</div></div>
@@ -515,6 +577,7 @@ footer a:hover{color:var(--a1)}
   <div class="etop"><span class="badge br">Contact</span></div>
   <div class="etitle">Get in Touch</div>
   <p class="edesc">Open to research collaborations, academic correspondence, and conversations about BCI-HRP, 振动即存在, and the projects above.</p>
+  <p class="edesc zh">欢迎围绕 BCI-HRP、人类返回协议、振动即存在、学习科学、AI 协作、声音研究与上述项目进行学术交流、合作沟通与研究对话。</p>
   <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
     <div style="font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2)"><span style="color:var(--tx3);display:inline-block;width:80px">EMAIL</span><a href="mailto:mellowwei7@gmail.com" style="color:var(--a1);text-decoration:none">mellowwei7@gmail.com</a></div>
     <div style="font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2)"><span style="color:var(--tx3);display:inline-block;width:80px">INSTAGRAM</span><a href="https://www.instagram.com/laputamellow" target="_blank" style="color:var(--a1);text-decoration:none">@laputamellow</a></div>
