@@ -70,6 +70,20 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .ov .od{font-size:12px;color:var(--tx2);line-height:1.75}
 .langjump{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .langjump a{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--a1);text-decoration:none;border:1px solid rgba(90,240,200,.18);padding:4px 8px;border-radius:2px;background:rgba(90,240,200,.05)}
+.corebridge{background:linear-gradient(135deg,rgba(90,240,200,.055),rgba(144,128,248,.045) 48%,rgba(240,127,212,.035));border:1px solid var(--border-hi);border-left:3px solid var(--a1);border-radius:4px;padding:22px 24px;margin:16px 0 4px;position:relative;overflow:hidden}
+.corebridge::before{content:'';position:absolute;right:-80px;top:-90px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(90,240,200,.13),transparent 65%);pointer-events:none}
+.core-kicker{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--a1);margin-bottom:9px}
+.core-title{font-family:'Spectral',serif;font-size:23px;line-height:1.25;color:var(--hd);font-weight:500;margin-bottom:9px}
+.core-title span{display:block;font-size:14px;font-style:italic;font-weight:300;color:var(--a2);margin-top:4px}
+.core-desc{font-size:13.5px;color:var(--tx);line-height:1.78;max-width:720px;margin-bottom:10px}
+.core-desc.zh{color:var(--tx);border-left:2px solid rgba(144,128,248,.35);padding-left:12px;margin-top:9px}
+.bridgegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0 12px}
+.bridgecard{background:rgba(7,7,15,.52);border:1px solid var(--border);border-radius:3px;padding:13px}
+.bridgecard .bl{font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--a2);margin-bottom:5px}
+.bridgecard .bt{font-size:12.5px;color:var(--hd);font-weight:500;margin-bottom:4px;line-height:1.35}
+.bridgecard .bd{font-size:11.5px;color:var(--tx2);line-height:1.65}
+.bridgequote{font-family:'Spectral',serif;font-style:italic;font-size:14px;color:var(--a1);padding-top:12px;margin-top:12px;border-top:1px dashed rgba(90,240,200,.20);line-height:1.55}
+
 .etags{display:flex;gap:5px;flex-wrap:wrap;margin-top:11px}
 .tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.05em;color:var(--tx3);border:1px solid var(--border);padding:2px 7px;border-radius:2px}
 
@@ -155,7 +169,7 @@ footer a:hover{color:var(--a1)}
   .wrap{grid-template-columns:1fr}.sidebar{display:none}
   .mhname{font-size:22px}
   .pipeline,.fsteps,.genres{grid-template-columns:1fr 1fr}
-  .protos,.dualframe,.msteps,.overviewgrid{grid-template-columns:1fr}
+  .protos,.dualframe,.msteps,.overviewgrid,.bridgegrid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -190,6 +204,7 @@ footer a:hover{color:var(--a1)}
     <a href="#about" class="on">About</a>
     <a href="#english-overview">EN Overview</a>
     <a href="#chinese-overview">中文总览</a>
+    <a href="#metalogic-core">MetaLogic Core</a>
     <a href="#bci">BCI-HRP</a>
     <a href="#vibration">振动即存在</a>
     <a href="#qualia">Qualia Matrix</a>
@@ -249,6 +264,85 @@ footer a:hover{color:var(--a1)}
   <div class="langjump"><a href="#bci">进入 BCI-HRP</a><a href="#metalogic">阅读元逻辑</a><a href="#english-overview">English Overview</a></div>
 </article>
 
+
+<!-- METALOGIC CORE RELATION -->
+<article class="entry" id="metalogic-core">
+  <div class="etop">
+    <span class="badge bp">Methodological Core</span>
+    <span class="edate">MetaLogic ⇄ MellowAcademic · portal / engine relation</span>
+  </div>
+  <div class="corebridge">
+    <div class="core-kicker">Core Placement · 关系定位</div>
+    <div class="core-title">
+      MetaLogic as the Generative Engine of MellowAcademic
+      <span>元逻辑生成学：MellowAcademic 学术生态的底层发动机</span>
+    </div>
+
+    <p class="core-desc">
+      MellowAcademic is the public-facing academic portal: it maps projects, research directions,
+      collaboration surfaces, and intellectual outputs. MetaLogic is the methodological core inside
+      that portal: it explains how these projects are generated, connected, tested, and phase-transitioned
+      from lived consciousness into research systems.
+    </p>
+
+    <p class="core-desc zh">
+      MellowAcademic 是面向外部世界的学术正门：它负责呈现项目、研究方向、合作接口与学术产出。
+      MetaLogic 是这个正门内部的方法论核心：它解释这些项目如何从实时意识、语言、身体、节律、
+      关系与施为现实中生成、连接、被检验，并相变成研究系统。
+    </p>
+
+    <div class="bridgegrid">
+      <div class="bridgecard">
+        <div class="bl">Relation 01</div>
+        <div class="bt">Portal ⇄ Engine</div>
+        <div class="bd">MellowAcademic shows the research ecology. MetaLogic powers the generative grammar behind it.</div>
+      </div>
+      <div class="bridgecard">
+        <div class="bl">Relation 02</div>
+        <div class="bt">Projects ⇄ Method</div>
+        <div class="bd">BCI-HRP, MellowEd, RelaMismatch, YourLanguage, and Qualia Matrix are not fragments; they are outputs of the same method.</div>
+      </div>
+      <div class="bridgecard">
+        <div class="bl">Relation 03</div>
+        <div class="bt">Academic Map ⇄ Source Logic</div>
+        <div class="bd">The portal is the map scholars can enter. MetaLogic is the source logic that lets the map keep generating.</div>
+      </div>
+    </div>
+
+    <div class="dualframe">
+      <div class="df">
+        <div class="dfl">External Reader</div>
+        <div class="dft">Start from MellowAcademic</div>
+        <div class="dfd">For professors, labs, collaborators, and readers: this portal provides the most legible overview of Wei Jueran's research ecology.</div>
+      </div>
+      <div class="df">
+        <div class="dfl">Internal Method</div>
+        <div class="dft">Enter MetaLogic</div>
+        <div class="dfd">For the generative mechanism: MetaLogic gives the discipline-level account of language-generated reality-feeling and phase-transition methodology.</div>
+      </div>
+    </div>
+
+    <div class="bridgequote">
+      MellowAcademic is the academic portal. MetaLogic is the methodological engine.
+      <br>学术总站是正门；元逻辑生成学是发动机。
+    </div>
+
+    <div class="langjump">
+      <a href="https://mellowwei.github.io/MetaLogic/" target="_blank" rel="noopener">Open MetaLogic</a>
+      <a href="#metalogic">Read Project Card</a>
+      <a href="#method">See Four-Move Method</a>
+    </div>
+  </div>
+
+  <div class="etags">
+    <span class="tag">methodological core</span>
+    <span class="tag">MetaLogic</span>
+    <span class="tag">MellowAcademic</span>
+    <span class="tag">portal / engine</span>
+    <span class="tag">research ecology</span>
+    <span class="tag">phase transition</span>
+  </div>
+</article>
 
 <!-- SCHOLAR-SOURCE -->
 <article class="entry">
@@ -619,6 +713,18 @@ footer a:hover{color:var(--a1)}
   </div>
 
   <div>
+    <div class="sbl">Methodological Core</div>
+    <div class="profile">
+      <div class="pnm">MetaLogic<small>元逻辑生成学 · generative engine</small></div>
+      <p class="pdesc">The method root of this academic portal: language → logic → reality-feeling; naming → pressure → semantic drift → phase transition.</p>
+      <div class="langjump" style="margin-top:10px">
+        <a href="#metalogic-core">Core Relation</a>
+        <a href="https://mellowwei.github.io/MetaLogic/" target="_blank" rel="noopener">Open Site</a>
+      </div>
+    </div>
+  </div>
+
+  <div>
     <div class="sbl">Active Projects</div>
     <ul class="sblinks">
       <li><a href="https://mellowwei.github.io/BCI/" target="_blank">BCI-HRP · Human Return Protocol <span class="ar">→</span></a></li>
@@ -649,7 +755,7 @@ footer a:hover{color:var(--a1)}
 
   <div>
     <div class="sbl">Coordinates</div>
-    <div class="coord">NODE <span>44271</span><br>STYLE <span>77347</span><br>FREQ <span>427 Hz</span><br>UPenn · Philadelphia PA<br>it/them/she · 乙亥日主<br>非线性意识体</div>
+    <div class="coord">NODE <span>44271</span><br>CORE <span>MetaLogic</span><br>ROLE <span>Academic Portal</span><br>STYLE <span>77347</span><br>FREQ <span>427 Hz</span><br>UPenn · Philadelphia PA<br>it/them/she · 乙亥日主<br>非线性意识体</div>
   </div>
 
 </aside>
